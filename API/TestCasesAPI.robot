@@ -16,11 +16,8 @@ Buscar um livro especifico (GET em todos os livros especifico)
     Conferir se retorna todos os dados corretor do livro 15
 Cadastrar um novo livro (POST)
     Cadastrar um novo livro
-    #Conferir se retorna todos os dados do livro cadastrado
-# Alterar um livro (PUT)
-#     Alterar um novo livro
-    # Conferir se retorna todos os dados alterados do livro x
-
+Alterar um livro (PUT)
+     Alterar o livro "15"
 Deletar um livro (DELETE)
     Deletar o livro "15"
-#     Conferir se deletou o livro x
+    Consultar se livro foi deletado
