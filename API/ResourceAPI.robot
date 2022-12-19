@@ -48,6 +48,7 @@ Cadastrar um novo livro
     ...                            headers=${HEADERS}
     Log    ${RESPOSTA.text}
     Set Test Variable    ${RESPOSTA}
+    
 Alterar o livro "${ID_LIVRO}"
     ${HEADERS}    Create Dictionary    content-type=application/json
     ${RESPOSTA}    Put Request    FakeAPI    v1/Books/${ID_LIVRO}
@@ -60,10 +61,6 @@ Deletar o livro "${ID_LIVRO}"
     ${RESPOSTA}    Delete Request    FakeAPI    v1/Books/${ID_LIVRO}
     Log    ${RESPOSTA.text}
     Set Test Variable    ${RESPOSTA}
-
-Conferir Status Code
-    [Arguments]    ${STATUSCODE_DESEJADO}
-    Should Be Equal As Strings    ${RESPOSTA.status_code}    ${STATUSCODE_DESEJADO}
 
 Consultar se livro foi deletado
     Should Be Equal    ${RESPOSTA.text}    ${EMPTY}
