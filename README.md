@@ -50,7 +50,7 @@ O objetivo deste projeto é aplicar os conceitos aprendidos para automatizar tes
 
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/robot-framework-automation.git
+   git clone https://github.com/seu-usuario/Robot-Framework.git
 Instale o Robot Framework e as Bibliotecas Necessárias:
 
 Instale o Robot Framework via pip:
